@@ -1,0 +1,84 @@
+<!-- <h2>{{title}}</h2> -->
+
+<!-- <div ng-controller="IndexCtrl">
+  <input type="checkbox" ng-model ="checked" id="check">
+  <label for="check">Show text?</label>
+
+  <div ng-show ="checked">
+    I am checked!
+  </div>
+
+  <div ng-hide ="checked">
+    I am not checked!
+  </div>
+</div> -->
+
+<!-- <div ng-controller="IndexCtrl">
+  <h2>Here are my colorful friends</h2>
+  <div ng-repeat ="friend in friends">
+    <span ng-style ="{color: '{{friend.style}}'}">{{friend.name}}</span>
+  </div>
+</div> -->
+
+<!-- <div ng-controller="IndexCtrl">
+
+  <h1>$watch and ng-hide</h1>
+  <div class="magic" ng-hide ="removed">
+    <br>
+    Let's see if you know the password...
+    <input type="text" ng-model ="typing", autofocus>
+    <h3>{{typing}}</h3>
+  </div>
+  <h3>{{notice}}</h3>
+
+</div> -->
+
+<!-- <style>
+  .over {
+    color: green;
+  }
+  .under {
+    color: red;
+  }
+</style>
+
+<div ng-controller="IndexCtrl">
+  <h1>Counter with styling example + ng-click</h1>
+  <h1 ng-class = "{'over': value >= 0, 'under': value < 0}">
+    <span>{{value}}</span>
+  </h1>
+  <button ng-click ="addOne()">Add One</button>
+  <button ng-click ="subtractOne()">Subtract One</button>
+</div> -->
+
+<div ng-controller="IndexCtrl">
+
+  <h1>Book List</h1>
+
+  <h2>We have {{books.length}}
+    <ng-pluralize count = "books.length" when = "{'1' : 'book', 'other' : 'books'}"></ng-pluralize>
+  </h2>
+
+  <input type="search" ng-model ="search" placeholder="Filter Books", autofocus>
+  
+  <div ng-repeat ="book in books | filter: search | orderBy: '-rating'">
+    <ul>
+      <li>
+        INDEX: {{$index}}
+      <li>
+        ACTUAL INDEX: {{books.indexOf(book)}}
+      </li>
+      <li>
+        Title: <em>{{book.title | uppercase}}</em>
+      </li>
+      <li>
+        Price: <strong>{{book.price | addTax : .15 | currency}}</strong>
+      </li>
+      <li>
+        Rating: <strong>{{book.rating}}</strong>
+      </li>
+    </ul>
+    <button ng-click ="boughtBook(book)">Buy this book</button>
+  </div>
+
+</div>

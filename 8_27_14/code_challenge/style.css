@@ -1,0 +1,14 @@
+div#container {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  margin-top: 50px;
+}
+
+div.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: #74E07E;
+  margin-right: 30px;
+}

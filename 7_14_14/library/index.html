@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library App</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<h1>Library App</h1>
+
+	<form id="book_form">
+    <fieldset>
+      <legend>Enter a book</legend>
+
+  		<label for="book_title">Title</label>
+  		<input type="form" name="title" id="book_title" placeholder="book title">
+
+  		<label for="book_author">Author</label>
+  		<input type="form" name="author" id="book_author" placeholder="book author">
+
+  		<label for="book_rating">Rating</label>
+  		<input type="range" min="1" max="5" name="rating" id="book_rating">
+
+      <input type="submit" value="Rate Book">
+
+    </fieldset>
+	</form>
+
+  <h2>Book List</h2>
+  <ul id="book_list"></ul>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

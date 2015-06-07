@@ -1,0 +1,10 @@
+What is the DOM?
+
+- Document Object Model
+- Formatting / standardization
+- HTML 'document'
+
+- The DOM is the structure of elements on the page (HTML has tags for CSS to map to)
+- The DOM takes the HTML elements (document) on the page and produces the output (the objects)
+- ** The DOM is your HTML once it has been read and processed by the browser ** --> it is a representation of your HTML
+---> reads a 'string' of text, takes the HTML tags, and turns them into objects

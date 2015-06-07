@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise</title> 
+  <script>  
+    window.onload = function() {
+      // var divOne = document.getElementById('div_1');
+      // var count = 0;
+      // divOne.onclick = function(event) {
+        // alert(divOne.innerHTML);
+        // count += 1;
+        // alert(count);
+
+      var divOne = document.getElementById('div_1');
+      var divTwo = document.getElementById('div_2');
+      var divThree = document.getElementById('div_3');
+      var divFour = document.getElementById('div_4');
+      var divFive = document.getElementById('div_5');
+      var lastClicked = document.getElementById('last_clicked');
+      var previouslyClicked = document.getElementById('previously_clicked')
+
+      divOne.onclick = function(event) {
+        previouslyClicked.innerHTML = lastClicked.innerHTML;
+        lastClicked.innerHTML = divOne.innerHTML;
+        // lastClicked = divOne;
+      }
+
+      divTwo.onclick = function(event) {
+        previouslyClicked.innerHTML = lastClicked.innerHTML;
+        lastClicked.innerHTML = divTwo.innerHTML;
+        // lastClicked = divTwo;
+      }
+
+      divThree.onclick = function(event) {
+        previouslyClicked.innerHTML = lastClicked.innerHTML;
+        lastClicked.innerHTML = divThree.innerHTML;
+        // lastClicked = divThree;
+      }
+
+      divFour.onclick = function(event) {
+        previouslyClicked.innerHTML = lastClicked.innerHTML;
+        lastClicked.innerHTML = divFour.innerHTML;
+        // lastClicked = divFour;
+      }
+
+      divFive.onclick = function(event) {
+        previouslyClicked.innerHTML = lastClicked.innerHTML;
+        lastClicked.innerHTML = divFive.innerHTML;
+        // lastClicked = divFive;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="last_clicked">none</div>
+  <div id="previously_clicked">none</div>
+  <div id="div_1"> 
+   1
+  </div>
+  <div id="div_2">
+   2
+  </div>
+  <div id="div_3">
+   3
+  </div>
+  <div id="div_4">
+   4
+  </div>
+  <div id="div_5">
+   5
+  </div>
+
+</body>
+</html>

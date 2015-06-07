@@ -1,0 +1,22 @@
+<form action="/planes" method="post">
+  <p>
+    <label for="name">Name</label>
+    <input type="text" name="plane[name]" id="name" autofocus>
+  </p>
+  <p>
+    <label for="name">Type</label>
+    <input type="text" name="plane[kind]">
+  </p>
+  <p>
+    <label for="description">Description</label>
+  </p>
+  <p>
+    <textarea name="plane[description]"></textarea>
+  </p>
+
+  <%= token_tag form_authenticity_token %>
+
+  <p>
+    <button>Save Plane</button>
+  </p>
+</form>

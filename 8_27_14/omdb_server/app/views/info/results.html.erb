@@ -1,0 +1,3 @@
+<% @results["Search"].each do |movie| %>
+  <p><a href="/info/<%= movie["imdbID"] %>"><%= movie["Title"] %></a>, <%= movie["Year"] %></p>
+<% end %>

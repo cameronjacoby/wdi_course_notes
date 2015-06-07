@@ -1,0 +1,14 @@
+{
+  "name": "intro_crc",
+  "version": "0.0.0",
+  "description": "parking garage management",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "dependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  }
+}

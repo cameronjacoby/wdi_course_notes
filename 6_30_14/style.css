@@ -1,0 +1,23 @@
+body {
+	background-color: rgb(233,220,228);
+}
+
+body:hover {
+	background-color: pink;
+}
+
+p {
+	color: pink;
+}
+
+#hi {
+	color: yellow;
+}
+
+.red {
+	background-color: red;
+}
+
+ul + p {
+	color: blue;
+}

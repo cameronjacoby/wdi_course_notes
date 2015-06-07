@@ -1,0 +1,47 @@
+Chrome Developer Tools:
+
+COMMAND + OPTION + j --> opens chrome console
+	--> also where to find 'inspect elememt'
+	--> console is a JavaScript console --> see JavaScript executed live
+
+----------
+
+
+JavaScript:
+
+console.log() --> prints out to the console
+	--> great tool for debugging your code: print out what your code should return so you can check it
+
+integers refer to whole numbers, i.e. 4 + 20
+floats are numbers with decimals --> take up much more space than integers
+	--> always use integers if you know you will be stricly dealing with whole numbers
+	--> floats and integers behave the same way except for division
+			--> e.g. 3/2 returns 1; 3.0/2.0 returns 1.5
+
+data types: strings, integers, floats, booleans
+
+booleans --> can be true or false; produced by expressions that return true or false
+
+variables --> containers used to store values
+	
+	var name = "Cameron";
+	> name
+	"Cameron"
+
+	var age = 24;
+	var isDog = false;
+	> age
+	24
+	> isDog
+	false
+
+	--> variables allow us to send/store info in database
+
+	var name = prompt("What's your name?");
+	> name
+	"Cameron"
+
+arrays --> variables that hold unlimited info; info will hold its order inside the array unless it is changed
+
+array.pop() --> removes the last element from the array
+array.push() --> pushes a new elements to the end of the array

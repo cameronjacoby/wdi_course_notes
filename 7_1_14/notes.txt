@@ -1,0 +1,27 @@
+
+Command Line:
+
+COMMAND + k --> clears terminaal
+clear --> clears terminal
+ls -a --> lists all files, including hidden
+ls -al --> shows long form of all files
+~ --> home directory
+/ --> root directory
+
+* don't put spaces in folder or doc names --> use '_' instead
+
+rm --> used for removing files, not directories
+rm -rf --> forces removal of directories
+touch --> creates a file
+subl . --> opens files in current directory using Sublime Text
+cat FILE --> shows contents of the file
+echo "TEXT" > FILE --> redirects text in "echo" to the file (adds the text to the file)
+echo "TEXT" >> FILE --> adds the text to the bottom of the file
+
+----------
+
+
+Git / GitHub:
+
+- Git is version control; GitHub allows you to use version control
+- Git is local (happens in the terminal); GitHub is remote (happens in the browser)

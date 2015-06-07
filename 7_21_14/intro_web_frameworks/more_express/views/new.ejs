@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <form method="post" action="/books">
+      <p><label for="book_title">Book Title</label> 
+      <input type="text" name="book[title]" id="book_title" placeholder="book title"></p>
+      <p><label for="book_author">Book Author</label> 
+      <input type="text" name="book[author]" id="book_author"placeholder="book author"></p>
+      <p><label for="book_description">Book Description</label> 
+      <textarea name="book[description]" id="book_description"placeholder="type your book's description here!"></textarea></p>
+      <input type="submit" value="Save Book">
+    </form>
+  </body>
+</html>

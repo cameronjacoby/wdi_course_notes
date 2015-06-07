@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication Example</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <% if (!isAuthenticated) { %>
+      <p><a href="/login">You must be logged in to view this page.</a></p>  
+    <% } else { %>
+      <h1>Hello, <%= user.username %> - you're logged in!</h1>
+      <p><a href="/logout">Log out here.</a></p>
+    <% } %>
+  </body>
+</html>

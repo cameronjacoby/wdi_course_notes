@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Socket.io Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <style>
+      #chat {
+        width: 500px;
+        height: 500px;
+        border: 2px solid fuchsia;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <form id="send_message">
+      <input id="message">
+      <input type="submit">
+    </form>
+    
+    <div id="chat"></div>
+
+
+    <script>
+      var socket = io.connect;
+      var form = $('#send_message');
+      var message = $('#message');
+      var chat = $('#chat');
+
+      form.submit(function(event) {
+        event.preventDefault();
+        socket.emit('send_taco', message.val());
+      });
+
+      socket.on('receive_taco', function(data) {
+        chat.append('<div>' + data + '</div>');
+      });
+
+    </script>
+
+  </body>
+</html>
+
+
+
+

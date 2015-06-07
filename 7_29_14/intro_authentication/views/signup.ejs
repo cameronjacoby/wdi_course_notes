@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication Example</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+
+    <% if (typeof message !== 'undefined') { %>
+      <p style="color: red;">
+        <%= message %>
+      </p>
+    <% } %>
+
+    <form method="post" action="/create">
+      <p>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username" value="<%= username %>" autofocus>
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </p>
+
+      <p>
+        <input type="submit" value="Sign up!">
+      </p>
+    </form>
+    <p><a href="/login">Have an account? Log in here.</a></p>
+
+  </body>
+</html>

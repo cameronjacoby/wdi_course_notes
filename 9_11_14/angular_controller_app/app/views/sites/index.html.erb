@@ -1,0 +1,15 @@
+<div ng-controller="PersonCtrl">
+  <form ng-submit="handleSubmit(person)">
+    <div>
+      <input ng-model="person.firstName" placeholder="First Name", autofocus>
+    </div>
+    <div>
+      <input ng-model="person.lastName" placeholder="Last Name">
+    </div>
+    <button>Save Person</button>
+  </form>
+
+  <div ng-repeat="person in people">
+    {{person.firstName}} {{person.lastName}} 
+  </div>
+</div>

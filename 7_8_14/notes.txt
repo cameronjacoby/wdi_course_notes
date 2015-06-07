@@ -1,0 +1,25 @@
+JavaScript:
+
+- JavaScript does not distinguish between integers and floats (like Ruby) --> all numbers are just 'numbers'
+- For stings, good idea to choose either single or double quotes and stick with that choice consistently --> good idea to use single quotes b/c it's easier to pick out apostophes (where you will need to escape (\')
+- For readability, use spaces between numbers, operators, varialbes, etc. e.g (2 + 3) * 7 instead of (2+3)*7
+
+Number Operators:
+	- Math.pow(3,2) => 9
+  - Math.pow(16, .5) => 4 (square root)
+  - Math.sqrt(16) => 4
+  - Math.random() --> returns a random number between 0 and 1
+  - Math.random() * 10 --> returns a random number between 1 and 10 (multiply Math.random() by any number to get a random number between 1 and that number)
+  - Math.floor(3.99999) => 3 (cuts off the decimal points -- not rounding)
+
+  Math.floor(Math.random() * 10) --> returns a number between 1 and 10 without decimal points
+
+Variables:
+  - var myNumber = 1; --> use camelCase (use snake_case in Ruby)
+
+----------
+
+Homework Review - Command Line Mystery:
+
+  head -n 179 FILENAME | tail -n 1
+  --> finds first 179 lines in the file, then from that subset, returns the last line (the 179th line)
